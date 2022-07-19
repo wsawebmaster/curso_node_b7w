@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJS - b7w</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        body{
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.8rem;
+            color: #fff;
+            background-color: rgb(9, 7, 45);
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Curso NodeJS</h3>
+    Criando seu primeiro projeto NodeJS <br />
+
+    <strong>npm init</strong> ou <strong>npm init -y</strong> <br />
+    Teclar enter confirmando todas informações, as configurações estarão no arquivo package.json<br />
+    <pre>
+        Crie um arquivo index.js
+            let nome = 'Wagner';
+            let idade = 42;
+            
+            console.log(`Meu nomé é ${nome} e tenho ${idade} anos`);
+    </pre>
+    
+    Inicia projeto <br />
+    <strong>node index.js</strong> <br />
+    Arquivo <strong>App.tsc</strong> dentro da src <br /><br />
+
+    <h4>Instalando typescript</h4>
+    <strong>npm install -g typescript</strong> <br />
+    Iniciar arquivo de configuração do typescript <br />
+    <strong>tsc --init (cria arquivo tsconfig.json)</strong><br />
+    Configurando Typescript <br />
+    <pre>
+        Abra o arquivo tsconfig.json e altere
+        "target": "es6",
+        Adicione a linha
+        "moduleResolution: "node",
+        Descomente definindo caminho
+        "outDir": "./dist",
+        "rootDir": "./src",
+    </pre>
+    Instalar dependência typesnode<br />
+    <strong>npm install --save-dev @types/node</strong><br /><br />
+
+    Executar código da dist<br />
+    tsc -w (monitora as modificações)<br /><br />
+
+    Agora para visualizar novamente <br />
+    node ./dist/index.js<br />
+
+    Personalizar configurações no arquivo package.json <br />
+    <pre>
+        "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1",
+            "start": "node dist/index.js",
+            "watch-ts": "tsc -w"
+          },
+        
+    </pre>
+    Para confirmar execute<br />
+    <strong>npm run watch-ts </strong> inicar monitoramento<br />
+    <strong>npm run start</strong> iniciar projeto<br /><br />
+
+    Exportar(habilitar para uso em outros arquivos)<br />
+    export default { somar, subtrair};<br />
+    import * as Matematica from './matematica';(importar)
+<hr>
+<h3>Importar arquivos terceiros</h3>
+
+</body>
+</html>

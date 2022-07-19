@@ -1,0 +1,25 @@
+{
+  "name": "curso_node_b7w",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "watch-ts": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wsawebmaster/curso_node_b7w.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wsawebmaster/curso_node_b7w/issues"
+  },
+  "homepage": "https://github.com/wsawebmaster/curso_node_b7w#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.6"
+  }
+}
